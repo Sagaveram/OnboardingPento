@@ -27,6 +27,8 @@ defmodule PentoWeb.Router do
       live "/admin-dashboard", Admin.DashboardLive
       live "/", WrongLive
 
+      live "/game/:puzzle", Pento.GameLive
+
       live "/products", ProductLive.Index, :index
       live "/products/new", ProductLive.Index, :new
       live "/products/:id/edit", ProductLive.Index, :edit
